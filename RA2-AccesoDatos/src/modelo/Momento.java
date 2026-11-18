@@ -1,4 +1,4 @@
-package Modelo;
+package modelo;
 
 public enum Momento {
 	MORNING, AFTERNOON, EVENING, NIGHT;
