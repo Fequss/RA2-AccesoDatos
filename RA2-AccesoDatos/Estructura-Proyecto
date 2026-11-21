@@ -1,0 +1,46 @@
+PodcastsRA2/                          (proyecto Java de Eclipse)
+├── src/
+│   ├── Main.java
+│   ├── Modelo/
+│   │   ├── Genero.java
+│   │   ├── Podcasts.java
+│   │   ├── Episodios.java
+│   │   ├── Momento.java              (enum)
+│   │   └── Emocion.java              (enum)
+│   ├── dao/
+│   │   ├── GeneroDAO.java
+│   │   ├── PodcastDAO.java
+│   │   ├── EpisodioDAO.java
+│   │   └── impl/
+│   │       ├── GeneroDAOImpl.java
+│   │       ├── PodcastDAOImpl.java
+│   │       └── EpisodioDAOImpl.java
+│   ├── db/
+│   │   └── ConexionBD.java
+│   ├── importacion/
+│   │   ├── ImportadorCSV.java
+│   │   ├── RegistroCSV.java
+│   │   └── GeneradorInformes.java
+│   ├── exportacion/
+│   │   └── ExportadorJSON.java
+│   ├── informe/
+│   │   └── InformePDF.java
+│   └── ui/
+│       └── MenuConsola.java
+│
+├── lib/                              (todos los .jar)
+│   ├── sqlite-jdbc-x.x.x.jar
+│   ├── mysql-connector-j-x.x.x.jar   (o el driver de tu otro SGBD)
+│   ├── gson-x.x.x.jar
+│   ├── pdfbox-x.x.x.jar              (+ fontbox, commons-logging, que pide PDFBox)
+│   └── xchart-x.x.x.jar              (+ sus dependencias)
+│
+├── datos/
+│   └── podcast_dataset.csv
+├── salida/                           (lo genera el programa)
+│   ├── informeErrores.txt
+│   ├── inconsistencias.csv
+│   ├── exportacion_Technology.json
+│   └── InformeEmocional.pdf
+├── db.properties                     (en la raíz del proyecto)
+└── podcasts.db                       (SQLite; se crea al ejecutar)
